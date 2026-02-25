@@ -16,6 +16,10 @@ PascalCase -> NomeDoProjeto
 kebab-case -> nome-do-projeto
 
 # Cases em REACT NATIVE 
+
 arquivo -> ``snake_case``, mas pode ser cammelCase em alguns casos
+
 componente ->  ``PascalCase``
+
 função -> ``cammelCase``   
+

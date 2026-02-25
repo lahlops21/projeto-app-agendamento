@@ -1,20 +1,27 @@
 import { StyleSheet, Text, View } from "react-native";
 
+// Constantes das cores para estilização
+const TEXT_PRIMARY = "#6B6E71";
+const COLOR_PRIMARY = "#0B3B60";
+const COLOR_DETAIL = "#339CFF";
+
+// Componente Funcional (Como se fosse o HTML)
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>
+    <View style={styles.bg}>
+      <Text style={styles.texto}>
         Olá, Lais!
       </Text>
     </View>
   )
 }
 
-
+// Criação do stylesheet (como se fosse o css)
 const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    justifyContent:"center",
-    alignItems: "center"
+  bg: {
+    backgroundColor: COLOR_DETAIL
+  },
+  texto: {
+    color: TEXT_PRIMARY
   }
 })

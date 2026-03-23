@@ -7,6 +7,7 @@
 react native com o nome desejado na versão 3. 
 2. npm start -> Prepara/roda o servidor para ser executado
 3. npm run reset-project -> rseta o projeto para uma versão mais limpa
+4. npm i ou npm install -> Instala todas as bibliotecas necessárias do node. 
 
 
 # Cases 
@@ -22,4 +23,17 @@ arquivo -> ``snake_case``, mas pode ser cammelCase em alguns casos
 componente ->  ``PascalCase``
 
 função -> ``cammelCase``   
+
+
+
+## Estrutura do projeto vollmed 
+
+🗂️ app
+- 📂components
+-- 🤖 LabeledInput.jsx
+- 📂services
+- 📂screens 
+-- 📲 LoginScreen.jsx
+-- 🗒️ RegisterScreen.jsx
+
 

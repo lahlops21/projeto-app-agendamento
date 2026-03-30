@@ -1,6 +1,8 @@
 # COMPONENTES DO REACT NATIVE
 <Text></Text> -> Como se fosse o p do HTML, garda texto. Tem que estar pelo menos dentro de uma view
 <View></View> -> Como a div do HTML
+<Pressable></Pressable> -> Envolve um elemento a ser pressionado
+StyleSheet -> Cria uma folha de estilo para estilização. 
 
 # Comandos do REACTIVE NATIVE 
 1. npm create-expo-app@3 nome-do-projeto -> Cria um app
@@ -30,10 +32,18 @@ função -> ``cammelCase``
 
 🗂️ app
 - 📂components
+-- 🟥 Button.jsx
 -- 🤖 LabeledInput.jsx
 - 📂services
 - 📂screens 
 -- 📲 LoginScreen.jsx
 -- 🗒️ RegisterScreen.jsx
 
+
+
+## OBS 
+1. Em react native, as propriedades também sã conhecidas como props. 
+2. Quando você for criar a estilização através do stylesheet, a constante deverá estar no padrão cammelCase `BOA PRÁTICA`
+3. Na customização do styles, será necessário deixar uma vírgula após cada seletor e após cada propriedade dentro do seletor `BOA PRÁTICA`
+4. 
 

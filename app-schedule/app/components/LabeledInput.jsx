@@ -1,25 +1,26 @@
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
-export default function LabeledInput({label, ...rest}){
-   
+
 const INPUT_BG = '#f5f5f5';
 const INPUT_BORDER = '#e8e8e8';
 const LABEL_COLOR = '#36454f';
 
+export default function LabeledInput({label, ...rest}){
+   
     return (
         <View style={styles.wrapper}>
             
-            <Text tyle={styles.lable}>                
+            {/* Se o label for pasado, exiba o label, se não, exiba 'não informado'. */}
+            <Text style={styles.lable}>                
                 {label ? label: "Não Informado"} 
             </Text>
-            
-            {/* Se o label for pasado, exiba o label, se não, exiba 'não informado'. */}
 
 
-            <TextInput
-            style ={style.input}
+            <TextInput // Nativo do textInput um placeholder. Através das props, ele tem não só a caixinha mas também um placeholder
+            style ={styles.input}
             placeholderTextColor="#b5b5b5"           
-              />
+            {...rest}
+            />
         </View>
     )
 

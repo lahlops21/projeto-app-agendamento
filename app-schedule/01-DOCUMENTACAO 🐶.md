@@ -45,7 +45,7 @@ função -> ``cammelCase``
 1. Em react native, as propriedades também sã conhecidas como props. 
 2. Quando você for criar a estilização através do stylesheet, a constante deverá estar no padrão cammelCase `BOA PRÁTICA`
 3. Na customização do styles, será necessário deixar uma vírgula após cada seletor e após cada propriedade dentro do seletor `BOA PRÁTICA`
-
+4. Por padrão, quand criamos uma propredade no React Native, ele inutiliza as outras nativas. Passamos o "...rest" para indicar que queremos usar os dois.
 
 ## Props Primitivas 
 

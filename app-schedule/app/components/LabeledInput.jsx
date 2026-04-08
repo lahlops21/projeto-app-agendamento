@@ -8,13 +8,13 @@ const LABEL_COLOR = '#36454f';
 export default function LabeledInput({label, ...rest}){
    
     return (
-        <View style={styles.wrapper}>
+        <View style={styles.wrapper}> {/* Tipo uma div */}
             
             {/* Se o label for pasado, exiba o label, se não, exiba 'não informado'. */}
             <Text style={styles.lable}>                
                 {label ? label: "Não Informado"} 
-            </Text>
-
+            </Text>  {/*  Vem do React Native   */}
+            
 
             <TextInput // Nativo do textInput um placeholder. Através das props, ele tem não só a caixinha mas também um placeholder
             style ={styles.input}

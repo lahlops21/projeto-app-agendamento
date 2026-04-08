@@ -1,29 +1,39 @@
-import { ScrollView, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import LabeledInput from "../components/LabeledInput";
+import ButtonForm from "../components/ButtonForm";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function LoginScreen(){
     
     return (
-        <SafeAreaView> 
+        <SafeAreaView style ={styles.safeArea}> 
             <ScrollView>
-            <LabeledInput 
-            label = "Email" 
-            placeholder = 'Insira seu endereço de email: '
-            keyboardType = 'email-adress'
-                     
-            />
-            
-            
-            <LabeledInput 
-            label = "Senha" 
-            placeholder = 'Insira sua senha: '
-            secureTextEntry = {true} />
+                <Text style ={styles.title}>Faça login na sua conta </Text>
+                <View style ={styles.form}>   
+                    
+                    <LabeledInput 
+                    label = "Email" 
+                    placeholder = 'Insira seu endereço de email: '
+                    keyboardType = 'email-adress'
+                            
+                    />
+                                        
+                    <LabeledInput 
+                    label = "Senha" 
+                    placeholder = 'Insira sua senha: '
+                    secureTextEntry = {true} />
+
+                    <ButtonForm
+                    textButton= "Entrar"
+                    
+                    />
+                   
+                </View>
             </ScrollView>
         </SafeAreaView>
     )
 
 }
 
-
+const styles = StyleSheet.create({})
 

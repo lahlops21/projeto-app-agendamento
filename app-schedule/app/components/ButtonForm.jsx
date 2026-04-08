@@ -1,16 +1,16 @@
-import {Pressable, Text, StyleSheet} from "react-native"; 
+import {Pressable, Text, StyleSheet, View} from "react-native"; 
 
 // Declaração das constantes para estilização 
 const BG_BUTTON = "#00213d";
 const TEXT_PRIMARY = "#fff";
 
 // Exportação do componente de reuso 
-export default function Button() {
+export default function ButtonForm({textButton}) {
     return(
         <View style={styles.button}>
-            <Pressable>
+            <Pressable style = {styles.button}>
                 <Text style= {styles.title}>
-                    <E>ENTRAR</E>
+                    {textButton ? textButton: "Não Informado"} 
                 </Text>
             </Pressable>
         
@@ -23,6 +23,7 @@ export default function Button() {
 const styles = StyleSheet.create({  
     button: {
         backgroundColor: BG_BUTTON
+    
     },
     
     title: {  

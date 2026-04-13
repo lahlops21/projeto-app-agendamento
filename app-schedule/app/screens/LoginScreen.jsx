@@ -32,9 +32,9 @@ export default function LoginScreen(){
                     </TouchableOpacity>
 
                     <View style = {styles.footer}>
-                    <TouchableOpacity> 
-                        <Text style = {styles.footerText}>Ainda nâo tem conta?</Text>
-                        <Text style = {styles.footerLink}>Faça seu cadastro</Text>
+                    <Text style = {styles.footerText}>Ainda nâo tem conta?</Text>
+                    <TouchableOpacity>                        
+                        <Text style = {styles.footerLink}>Faça seu cadastro!</Text>
                     </TouchableOpacity>
                     </View>
                 
@@ -73,6 +73,26 @@ const styles = StyleSheet.create({
         marginTop: 14,
         alignSelf: "center" // Centraliza em relação ao pai dele, que é a view
         
+    },
+
+    footer: {
+        marginTop: 24,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+
+    footerText: {
+        fontSize: 13,
+        color: "#3a3a3a"
+    },
+
+    footerLink: {
+        color: "#0e73e8",
+        marginLeft: 3,
+        // textDecorationLine: "underline",
+        fontWeight: "700",
+        fontSize: 13
     }
 
 

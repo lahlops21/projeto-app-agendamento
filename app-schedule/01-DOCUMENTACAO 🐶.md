@@ -61,3 +61,5 @@ evitando sobreposição com elementos do sistema como a barra de status
 <ScrollView> -> É um componente que permite a rolagem do conteúdo quando ele 
 exede oespaço disponível na tela, garantindo que todos os campos do formulário
 sejam acessíveis mesmo em dispositivos menores. 
+
+<TouchableOpacity> -> É um componente que cria uma área clicável. 

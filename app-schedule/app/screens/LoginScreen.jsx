@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import LabeledInput from "../components/LabeledInput";
 import ButtonForm from "../components/ButtonForm";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -27,7 +27,17 @@ export default function LoginScreen(){
                     textButton= "Entrar"
                     
                     />
-                   
+                    <TouchableOpacity style = {styles.forget}> 
+                        <Text style = {styles.forgetText}>Esqueceu sua senha?</Text>
+                    </TouchableOpacity>
+
+                    <View style = {styles.footer}>
+                    <TouchableOpacity> 
+                        <Text style = {styles.footerText}>Ainda nâo tem conta?</Text>
+                        <Text style = {styles.footerLink}>Faça seu cadastro</Text>
+                    </TouchableOpacity>
+                    </View>
+                
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -35,5 +45,36 @@ export default function LoginScreen(){
 
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+    title: {
+        fontSize: 20,
+        fontWeight:"700",
+        textAlign: "center",
+        color: "#333",
+        marginBottom: 26
+    },
+
+    form: {
+        padding: 16
+    },
+
+    forgetText: {
+        color: "#00213d",
+        fontSize: 13,
+        fontWeight: "700",
+        fontFamily: "Public sans",
+        textDecorationLine: "underline"
+        
+    },
+
+    forget: {
+
+        marginTop: 14,
+        alignSelf: "center" // Centraliza em relação ao pai dele, que é a view
+        
+    }
+
+
+})
 

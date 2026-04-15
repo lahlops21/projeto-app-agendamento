@@ -32,9 +32,9 @@ export default function LoginScreen(){
                     </TouchableOpacity>
 
                     <View style = {styles.footer}>
-                    <Text style = {styles.footerText}>Ainda nâo tem conta?</Text>
+                    <Text style = {styles.footerText}>Ainda não tem conta?</Text>
                     <TouchableOpacity>                        
-                        <Text style = {styles.footerLink}>Faça seu cadastro!</Text>
+                        <Text style = {styles.footerLink}> Faça seu cadastro!</Text>
                     </TouchableOpacity>
                     </View>
                 
@@ -51,19 +51,20 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight:"700",
         textAlign: "center",
-        color: "#333",
+        color: "#6b6e71",
         marginBottom: 26
     },
 
     form: {
-        padding: 16
+        width: "100%",
+        marginTop: 16,
+        paddingHorizontal: 20
     },
 
     forgetText: {
         color: "#00213d",
         fontSize: 13,
-        fontWeight: "700",
-        fontFamily: "Public sans",
+        fontWeight: "700", // pode usar "semi-bold" ou sem aspas. Mas é melhor usar assim. 
         textDecorationLine: "underline"
         
     },
@@ -76,10 +77,11 @@ const styles = StyleSheet.create({
     },
 
     footer: {
-        marginTop: 24,
+        marginTop: 30,
         flexDirection: "row",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+         
     },
 
     footerText: {
@@ -89,7 +91,6 @@ const styles = StyleSheet.create({
 
     footerLink: {
         color: "#0e73e8",
-        marginLeft: 3,
         // textDecorationLine: "underline",
         fontWeight: "700",
         fontSize: 13

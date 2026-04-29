@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         backgroundColor: BG_BUTTON,
          borderRadius: 8,
          marginHorizontal: 20,
-        marginVertical: 10
+         marginVertical: 10
     
     },
     

@@ -63,3 +63,7 @@ exede oespaço disponível na tela, garantindo que todos os campos do formulári
 sejam acessíveis mesmo em dispositivos menores. 
 
 <TouchableOpacity> -> É um componente que cria uma área clicável. 
+
+## Boa Pratica
+
+-imagens são por padrão snake_case

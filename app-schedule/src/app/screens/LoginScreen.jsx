@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import LabeledInput from "../components/LabeledInput";
 import ButtonForm from "../components/ButtonForm";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -8,6 +8,10 @@ export default function LoginScreen(){
     return (
         <SafeAreaView style ={styles.safeArea}> 
             <ScrollView>
+                <Image
+                source={require("../assets/images/logo.png")}
+                style = {styles.logo}
+                />
                 <Text style ={styles.title}>Faça login na sua conta </Text>
                 <View style ={styles.form}>   
                     
@@ -47,6 +51,19 @@ export default function LoginScreen(){
 
 const styles = StyleSheet.create({
 
+    safeArea:{
+        flex:1, 
+        backgroundColor: "#fff",
+        paddingTop:62
+    },
+
+    logo:{
+        height: 34,
+        width:150,
+        alignSelf: "center", // centraliza a imagem dentro do conteiner
+        marginBottom:62
+    },
+    
     title: {
         fontSize: 20,
         fontWeight:"700",
@@ -70,7 +87,6 @@ const styles = StyleSheet.create({
     },
 
     forget: {
-
         marginTop: 14,
         alignSelf: "center" // Centraliza em relação ao pai dele, que é a view
         

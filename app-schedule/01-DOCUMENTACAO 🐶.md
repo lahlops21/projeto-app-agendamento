@@ -72,3 +72,13 @@ sejam acessíveis mesmo em dispositivos menores.
 ## Estrutura do Projeto
 
 Eu vou ter um arquivo obrigatório que irá importar
+
+
+
+## Trabahando com navegação no React Native 
+
+1. Link da documentação -> `https://reactnavigation.org/docs/getting-started`
+2. Instalar o core do react navigation -> `npm install @react-navigation/native`
+3. Instalar as dependências de ajustes -> `npx expo install react-native-screens react-native-safe-area-context`
+4. Instalar a dependência para utilizar a forma stack native (pilha nativa) no projeto -> `npm install @react-navigation/native-stack`
+obs: Para trabalhar com navegação, somente precisamos de instalar o native e depois as dependências par mobile e não precisamos de web. 

@@ -6,7 +6,7 @@ import ButtonForm from "../components/ButtonForm";
 
 
 export default function RegisterScreen(){
-    
+    const navigation = useNavigation();
     return(
         <SafeAreaView style ={styles.safeArea}>
             <ScrollView>

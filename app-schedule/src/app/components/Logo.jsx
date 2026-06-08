@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Svg, { Path } from 'react-native-svg'; // Primitivos de SVG
-import colors from '../theme/colors';
+import colors from '../theme/color';
 
 export default function Logo({ size = 28 }) {       // size padrão: 28px
   const iconSize = size;

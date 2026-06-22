@@ -82,3 +82,13 @@ Eu vou ter um arquivo obrigatório que irá importar
 3. Instalar as dependências de ajustes -> `npx expo install react-native-screens react-native-safe-area-context`
 4. Instalar a dependência para utilizar a forma stack native (pilha nativa) no projeto -> `npm install @react-navigation/native-stack`
 obs: Para trabalhar com navegação, somente precisamos de instalar o native e depois as dependências par mobile e não precisamos de web. 
+
+
+# Consumindo dados de uma api via react native 
+-- services 
+ - api.js 
+ - authService.js 
+
+ 
+
+

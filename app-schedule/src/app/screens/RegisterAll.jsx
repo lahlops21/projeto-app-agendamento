@@ -8,8 +8,9 @@ export default function RegisterAll(){
 return(
     <SafeAreaView>
         <ScrollView>
-            <Text>Agora, mais alguns dados sobre você</Text>
-            <View>
+            <Text>Agora, mais alguns dados</Text>
+            <Text>sobre você:</Text>
+            <View style={styles.form}>
                 <LabeledInput
                     label = "CEP" 
                     placeholder = 'Insira seu CEP'                    
@@ -17,6 +18,10 @@ return(
                 <LabeledInput
                     label = "Endereço" 
                     placeholder = 'Insira seu endereço'                    
+                />
+                <LabeledInput
+                    label = "Número" 
+                    placeholder = 'Insira seu número'                    
                 />
                 <LabeledInput
                     label = "Complemento" 
@@ -28,8 +33,12 @@ return(
                 />
 
                 <ButtonForm
-                    textButton = 'Voltar'
+                    textButton = 'Voltar'                   
                     
+                />
+
+                <ButtonForm
+                    textButton = 'Avançar'                   
                     
                 />
             </View>
@@ -38,3 +47,19 @@ return(
 
 )
 }
+
+const styles = StyleSheet.create({
+    title: {
+        fontSize: 20,
+        fontWeight: "700",
+        textAlign: "center",
+        color: "#6B6E71",
+        marginBottom: 10,
+    },
+
+    form: {
+        width: "100%",
+        marginTop: 16,
+        paddingHorizontal: 20,
+    },
+})

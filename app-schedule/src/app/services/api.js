@@ -28,4 +28,12 @@ api.interceptors.response.use(
     }
 )
 
+// Constante responsável por montas os métodos disponíveis na API
+export const api_metodos = {
+  get: (path) => request('GET', path),
+  post: (path, body) => request('POST', path, body),
+  put: (path, body) => request('PUT', path, body),
+  delete: (path) => request('DELETE', path),
+}
+
 export default api; // Exporta a instância do axios para ser usada em outras partes da aplicação
